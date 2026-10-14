@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>庭柯 歲時冊</title>
+<title>庭柯 留頁</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap">
@@ -66,11 +66,13 @@ a{color:var(--accent)}
 .hero .lead{margin-top:20px;color:var(--ink-2);max-width:34em;font-size:17px}
 .hero .cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
 .hero .mini{margin-top:20px;font-size:14px;color:var(--ink-2)}
+.tagline{font-family:var(--serif);font-weight:700;font-size:clamp(18px,2.6vw,22px);margin-top:16px;color:var(--accent);letter-spacing:.06em}
+.vnote{font-size:13.5px;color:var(--ink-2);margin-top:10px}
 .bookwrap{display:flex;justify-content:center;padding-block:10px 24px}
 .book{position:relative;width:min(100%,290px);aspect-ratio:3/4;background:var(--cover);border-radius:3px 9px 9px 3px;box-shadow:14px 20px 30px -14px var(--shadow),inset 0 0 0 1px rgba(255,255,255,.05)}
 .book::before{content:"";position:absolute;inset:0 auto 0 0;width:15px;border-radius:3px 0 0 3px;background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(255,255,255,.07) 60%,rgba(0,0,0,.12))}
 .book::after{content:"";position:absolute;inset:16px 16px 16px 30px;border:1px solid var(--foil);opacity:.55;pointer-events:none}
-.book .t{position:absolute;right:20%;top:13%;writing-mode:vertical-rl;font-family:var(--serif);font-weight:700;font-size:clamp(44px,9vw,58px);letter-spacing:.3em;color:var(--foil);line-height:1.2}
+.book .t{position:absolute;right:20%;top:13%;writing-mode:vertical-rl;font-family:var(--serif);font-weight:700;font-size:clamp(52px,10vw,68px);letter-spacing:.25em;color:var(--foil);line-height:1.2}
 .book .s{position:absolute;right:57%;top:15%;writing-mode:vertical-rl;font-family:var(--serif);font-size:13px;letter-spacing:.35em;color:var(--foil);opacity:.8}
 .book .stamp{position:absolute;right:14%;bottom:9%}
 .qrtag{position:absolute;right:-14px;bottom:-22px;transform:rotate(3deg);display:flex;gap:10px;align-items:center;background:var(--card);border:1px solid var(--line);padding:9px 12px;border-radius:4px;box-shadow:4px 6px 14px -6px var(--shadow);color:var(--ink)}
@@ -84,6 +86,7 @@ a{color:var(--accent)}
 .sec h2{font-size:clamp(26px,4vw,34px)}
 .sec .sub{color:var(--ink-2);margin-top:8px;max-width:38em}
 .pain{font-family:var(--serif);font-size:clamp(20px,3vw,26px);line-height:1.8;max-width:30em}
+.pain-q{display:block;margin-top:1em;font-weight:700}
 .pain em{font-style:normal;background:linear-gradient(transparent 62%,color-mix(in srgb,var(--seal) 22%,transparent) 62%)}
 .steps{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;counter-reset:s}
 .steps li{position:relative;padding-top:18px;border-top:2px solid var(--ink)}
@@ -268,7 +271,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
 
 <div id="app">
 <header class="top"><div class="wrap">
-  <button class="brand" data-go="home" aria-label="回到首頁"><span class="seal">庭柯</span><b>歲時冊</b></button>
+  <button class="brand" data-go="home" aria-label="回到首頁"><span class="seal">庭柯</span><b>留頁</b></button>
   <nav class="nav" aria-label="主選單">
     <button class="lnk opt" data-scroll="sec-flow">怎麼進行</button>
     <button class="lnk opt" data-scroll="sec-plans">方案</button>
@@ -284,19 +287,18 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
     <div>
       <div class="eyebrow">庭柯・兩代對話書</div>
       <h1>有些話，一直沒說出口。</h1>
-      <p class="lead">庭柯分別訪談長輩與子女，把人生裡印象最深的故事和想問對方的問題，整理成一本《歲時冊》，書裡還附上長輩聲音的 QR code。</p>
-      <div class="cta"><button class="btn" data-go="order">開始下單</button><button class="btn ghost" data-scroll="sec-plans">看三個方案</button></div>
+      <p class="tagline">留住家人的故事，也留住彼此在意的心意。</p>      <div class="cta"><button class="btn" data-go="order">開始下單</button><button class="btn ghost" data-scroll="sec-plans">看三個方案</button></div>
       <p class="mini">訪談時間由你選偏好區間，專人再與你聯絡確認。</p>
     </div>
-    <div class="bookwrap"><div class="book" aria-label="歲時冊書封示意">
-      <div class="s">庭柯・兩代對話書</div><div class="t">歲時冊</div>
+    <div class="bookwrap"><div class="book" aria-label="留頁書封示意">
+      <div class="s">庭柯・兩代對話書</div><div class="t">留頁</div>
       <span class="seal stamp">庭柯</span>
       <div class="qrtag"><span id="qrdeco"></span><span><b>掃一掃</b>聽見長輩的聲音<br>「飯煮好了，快來吃飯」</span></div>
     </div></div>
   </div></section>
 
   <section class="sec"><div class="wrap">
-    <p class="pain">子女想問，卻不知從何開口。長輩常說<em>「有什麼好講的」</em>，一語帶過。許多珍貴的故事和沒說出口的心情就這樣被時間淡忘，等到想問時，往往來不及了。</p>
+    <p class="pain">子女想問，卻不知從何開口。長輩常說<em>「有什麼好講的」</em>，一語帶過。許多珍貴的故事和沒說出口的心情就這樣被時間淡忘，等到想問時，往往來不及了。<span class="pain-q">那些日常，當時只道是尋常，卻未發現竟是無常。</span></p>
   </div></section>
 
   <section class="sec" id="sec-flow"><div class="wrap">
@@ -313,9 +315,9 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
 
   <section class="sec"><div class="wrap">
     <h2>書裡有什麼</h2>
-    <p class="sub">每本《歲時冊》由四個部分組成。</p>
+    <p class="sub">每本《留頁》由四個部分組成。</p>
     <div class="toc">
-      <div><span class="n">一</span><b>印象最深的事</b><span class="d">長輩與子女各自人生中印象最深的 2–3 件事</span></div>
+      <div><span class="n">一</span><b>印象最深的事</b><span class="d">長輩與子女各自人生中印象最深的事，依方案各 1–3 件</span></div>
       <div><span class="n">二</span><b>我們的問題</b><span class="d">庭柯設計的簡短固定問題，雙方各自回答</span></div>
       <div><span class="n">三</span><b>想問你的一題</b><span class="d">雙方各提一個想問對方的問題</span></div>
       <div><span class="n">四</span><b>聲音</b><span class="d">QR code 語音包：長輩的口頭禪與關心問候</span></div>
@@ -326,13 +328,13 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
     <h2>三個方案</h2>
     <p class="sub">從先試試看，到留下完整紀念。</p>
     <div class="plans" id="plans"></div>
-    <details class="cmp"><summary>方案內容比較</summary><div class="tablebox" id="cmp"></div></details>
+    <details class="cmp"><summary>方案內容比較</summary><div class="tablebox" id="cmp"></div><p class="vnote">語音包內容為長輩的常用口頭禪與關心問候（例如「飯煮好了，快來吃飯」「快點起床」）。</p></details>
   </div></section>
 
   <section class="sec" id="sec-faq"><div class="wrap">
     <h2>常見問題</h2>
     <div class="faq">
-      <details><summary>訪談要多久？</summary><p>心意版長輩、子女各一次，每次約 40–60 分鐘。傳家版與典藏版各一次，每次約 1–1.5 小時，並全程錄影。</p></details>
+      <details><summary>訪談要多久？</summary><p>長輩與子女各訪談一次。心意版每次約 30 分鐘，傳家版與典藏版每次約 40–50 分鐘，並含錄影。</p></details>
       <details><summary>在哪裡訪談？費用怎麼算？</summary><p>下單時填寫長輩與子女各自方便的訪談地點。我們會依距離酌收車馬費，由專人聯絡時告知，不含在方案價格內。</p></details>
       <details><summary>想問長輩的問題，什麼時候提？</summary><p>下單時就可以先寫下一個你想問長輩的問題，我們會在訪談中替你問。</p></details>
       <details><summary>長輩想問子女的問題呢？</summary><p>訪談長輩結束時，我們會當場請長輩提出一個想問子女的問題，再帶到子女的訪談。</p></details>
@@ -344,7 +346,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
 <!-- ORDER -->
 <main id="v-order" hidden><div class="wrap page">
   <button class="back" data-go="home">← 回首頁</button>
-  <h1>下單《歲時冊》</h1>
+  <h1>下單《留頁》</h1>
   <ol class="stepper" id="stepper"></ol>
   <div class="ordergrid">
     <div class="formcard">
@@ -465,7 +467,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
 </div></main>
 
 <footer class="foot"><div class="wrap">
-  <div><b style="font-family:var(--serif);color:var(--ink)">庭柯</b>　歲時冊・兩代對話書</div>
+  <div><b style="font-family:var(--serif);color:var(--ink)">庭柯</b>　留頁・兩代對話書</div>
   <div class="mail">客服信箱 <code>wetred910@gmail.com</code> <button class="btn ghost sm" data-act="copy-mail">複製</button></div>
 </div></footer>
 </div>
@@ -484,11 +486,11 @@ var fmtD=function(s){if(!s)return '';var p=s.split('-');return (+p[1])+'/'+(+p[2
 var ymd=function(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())};
 
 var PLANS={
- xinyi:{name:'心意版',price:4280,tag:'入門體驗，讓家人先試試看',items:['長輩、子女各訪談 1 次（約 40–60 分鐘）','各 2 件印象最深的事','精簡版固定問題','雙方各 1 題互問','QR 語音包 3–5 段','平裝書 1 本']},
- chuanjia:{name:'傳家版',price:8980,tag:'完整的兩代對話體驗',main:true,items:['長輩、子女各訪談 1 次（約 1–1.5 小時），含錄影','各 3 件印象最深的事','完整版固定問題','雙方各 1 題互問','QR 語音包 8–10 段','精裝書 2 本','精選照片 5 張','訪談影片']},
- dianzang:{name:'典藏版',price:13800,tag:'適合大壽等重要場合，留下完整紀念',items:['傳家版全部內容','時光膠囊：長輩寫給十年後子女的一封信，時間到後由我們寄出','精裝書 2 本＋禮盒','照片 8 張＋家族照（親人合照）','訪談影片精剪版']}
+ xinyi:{name:'心意版',price:12888,tag:'入門體驗，讓家人先試試看',items:['長輩、子女各訪談 1 次（約 30 分鐘）','各 1 件印象最深的事','精簡版固定問題','雙方各 1 題互問','QR 語音包 3 段','平裝書 1 本']},
+ chuanjia:{name:'傳家版',price:24888,tag:'完整的兩代對話體驗',main:true,items:['長輩、子女各訪談 1 次（約 40–50 分鐘），含錄影','各 2 件印象最深的事','完整版固定問題','雙方各 1 題互問','QR 語音包 5 段','精裝書 2 本','精選照片 5 張','訪談影片']},
+ dianzang:{name:'典藏版',price:58888,tag:'適合大壽等重要場合，留下完整紀念',items:['長輩、子女各訪談 1 次（約 40–50 分鐘），含錄影','各 3 件印象最深的事','完整版固定問題','雙方各 1 題互問','QR 語音包 8 段＋1 個影片','精裝書 2 本＋禮盒','時光膠囊：長輩寫給十年後子女的一封信，時間到後由我們寄出','照片 8 張＋家族照（親人合照）','訪談影片精剪版']}
 };
-var CMP=[['訪談','各 1 次（約 40–60 分鐘）','各 1 次（約 1–1.5 小時），含錄影','同傳家版'],['印象最深的事','各 2 件','各 3 件','各 3 件'],['固定問題','精簡版','完整版','完整版'],['互問','各 1 題','各 1 題','各 1 題'],['QR 語音包','3–5 段','8–10 段','8–10 段'],['書','平裝 1 本','精裝 2 本','精裝 2 本＋禮盒'],['時光膠囊','無','無','一封'],['照片','無','精選 5 張','8 張＋家族照'],['訪談影片','無','有','精剪版']];
+var CMP=[['訪談','各 1 次（約 30 分鐘）','各 1 次（約 40–50 分鐘），含錄影','各 1 次（約 40–50 分鐘），含錄影'],['印象最深的事','各 1 件','各 2 件','各 3 件'],['固定問題','精簡版','完整版','完整版'],['互問','各 1 題','各 1 題','各 1 題'],['QR 語音包','3 段','5 段','8 段＋1 個影片'],['書','平裝 1 本','精裝 2 本','精裝 2 本＋禮盒'],['時光膠囊','無','無','一封'],['照片','無','精選 5 張','8 張＋家族照'],['訪談影片','無','有','精剪版']];
 var STAGES=[{k:'new',n:'新訂單',g:0},{k:'confirm',n:'確認客製',g:0},{k:'scheduled',n:'已約訪談',g:1},{k:'interviewed',n:'已訪談',g:1},{k:'drafting',n:'整理文字稿',g:1},{k:'review',n:'人工檢核',g:1},{k:'binding',n:'送裝訂',g:2},{k:'packing',n:'包裝出貨',g:2},{k:'shipped',n:'已寄出',g:2},{k:'done',n:'完成',g:3}];
 var SLOTS=['平日白天','平日晚上','假日上午','假日下午','假日晚上'];
 var CHECKS=['文字稿逐字檢核完成','稱謂、人名、地名核對','已避開客戶標註的敏感話題','QR 語音包段數與書內對應','書封名字與獻詞核對','裝訂廠打樣確認'];
@@ -553,7 +555,7 @@ function renderHome(){
   $('#plans').innerHTML=h;
   $('#cmp').innerHTML='<table><thead><tr><th></th><th>心意版</th><th>傳家版</th><th>典藏版</th></tr></thead><tbody>'+
     CMP.map(function(r){return '<tr><th scope="row">'+r[0]+'</th><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td></tr>'}).join('')+
-    '<tr><th scope="row">定價</th><td>'+money(4280)+'</td><td>'+money(8980)+'</td><td>'+money(13800)+'</td></tr></tbody></table>';
+    '<tr><th scope="row">定價</th><td>'+money(PLANS.xinyi.price)+'</td><td>'+money(PLANS.chuanjia.price)+'</td><td>'+money(PLANS.dianzang.price)+'</td></tr></tbody></table>';
 }
 
 /* ---------- order form ---------- */
@@ -853,7 +855,7 @@ function wireAdmin(){
       rows.push([o.code,d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+' '+pad(d.getHours())+':'+pad(d.getMinutes()),(PLANS[o.plan]||{}).name||o.plan,o.amount,o.paid?'已付款':'未付款',STAGES[sIdx(o.stage)].n,b.name,b.phone,b.email,e.call,e.lang,k.names,k.dedication,s.name,s.phone,s.addr,c.addr,c.contact]);
     });
     var csv='﻿'+rows.map(function(r){return r.map(function(v){return '"'+String(v==null?'':v).replace(/"/g,'""')+'"'}).join(',')}).join('\r\n');
-    try{await S.dl.save({filename:'suishice-orders-'+ymd(new Date()).replace(/-/g,'')+'.csv',data:csv});toast('已匯出 '+(rows.length-1)+' 筆')}catch(e){if(!e||e.code!=='declined')toast('無法匯出')}
+    try{await S.dl.save({filename:'liuye-orders-'+ymd(new Date()).replace(/-/g,'')+'.csv',data:csv});toast('已匯出 '+(rows.length-1)+' 筆')}catch(e){if(!e||e.code!=='declined')toast('無法匯出')}
   });
 }
 
